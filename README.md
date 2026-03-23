@@ -5,6 +5,7 @@ What's working so far (I'm up to v 0.5-2 by now):
 
 * Cygnus Window Manager (minimalist, floating, keyboard + mouse driven)
 * Autostart apps (configurable via text file)
+* Multiple workspaces (2, navigable via panel applet or keyboard bindings)
 * Run dialogue - native (bound to ctrl+d)
 * Terminal Launch (x-terminal-emulator bound to Alt+Enter)
 * Panel - native (applications list and system tray)
@@ -20,7 +21,8 @@ What's working so far (I'm up to v 0.5-2 by now):
 What's pending
 
 * text editor - super small - no syntax hl
-* systray clock - editable
+* systray clock - minimal
+* calculator - basic math functions with keyboard and mouse input support.
 
 Wishlist
 
