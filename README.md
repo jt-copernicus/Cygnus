@@ -1,7 +1,7 @@
 # Cygnus
 Cygnus is a minimalistic, floating window manager for X11 - work in progress
 
-What's working so far (I'm up to v 0.5-2 by now):
+What's working so far (I'm up to v 0.8-3 by now [3.24.25]):
 
 * Cygnus Window Manager (minimalist, floating, keyboard + mouse driven)
 * Autostart apps (configurable via text file)
