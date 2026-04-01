@@ -3,7 +3,11 @@
  * A minimalist file manager for Cygnus WM.
  *
  * by Jonathan Torres
- * 
+ *
+ * This app uses stb_image.h for direct JPEG/PNG output.
+ * stb_image.h was written by Sean Barret, and is used under the MIT license.
+ * License text included within the header file.
+ *
  * This program is free software: you can redistribute it and/or modify it under the terms of the 
  * GNU General Public License as published by the Free Software Foundation, either version 3 of 
  * the License, or (at your option) any later version.
