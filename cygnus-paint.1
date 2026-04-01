@@ -1,0 +1,58 @@
+.TH CYGNUS-PAINT 0.3-2 "March 2026" "Version 0.3-2" "Cygnus Paint App"
+.SH NAME
+cygnus-paint \- A simple paint application for Cygnus WM.
+
+.SH SYNOPSIS
+.B cygnus-paint
+
+.SH DESCRIPTION
+.B cygnus-paint
+is a lightweight painting application built with SFML. It allows users to draw freehand, fill areas with color, undo/redo actions, and zoom in/out on the canvas.
+
+.SH CONTROLS
+The application is controlled primarily via the mouse.
+
+.TP
+.B Left Click (Canvas)
+Draw with the current brush or fill an area with the bucket tool.
+.TP
+.B Left Click (Toolbar)
+Select tools, colors, adjust brush size, undo/redo actions, zoom, and save.
+
+.SH TOOLBAR BUTTONS
+.TP
+.B Brush
+Selects the freehand drawing tool.
+.TP
+.B Bucket
+Selects the flood fill tool.
+.TP
+.B - / +
+Decrease or increase the brush size (1-50 pixels).
+.TP
+.B Undo / Redo
+Step backward or forward through the drawing history (up to 20 steps).
+.TP
+.B Z In / Z Out
+Zoom in or out of the canvas.
+.TP
+.B Save
+Saves the current canvas to \fB~/Pictures/drawing.png\fR. If the HOME environment variable is not set, saves to \fBrawing.png\fR in the current directory.
+
+.SH COLORS
+The palette includes a selection of basic colors:
+Black, White, Gray, Red, Orange, Yellow, Blue, Green, Pink, Purple, and Brown (light/dark variants).
+
+.SH FILES
+.TP
+.I ~/Pictures/drawing.png
+Default save location for drawings.
+
+.SH AUTHOR
+Jonathan Torres
+
+.SH LICENSE
+Licensed under GPL v3.0-or-later
+
+.SH SEE ALSO
+.BR sfml (3)
