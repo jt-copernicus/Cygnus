@@ -40,6 +40,13 @@ echo "------------------------------------------------------------"
 echo "All dependencies installed successfully."
 echo "------------------------------------------------------------"
 
+
+#i keep cygnus-paint separate because it's the only one in c++
+mkdir -p cygnus-paint
+mv main.cpp cygnus-paint/
+mv cygnus-paint.1 cygnus-paint/
+mv pmakefile cygnus-paint/Makefile
+
 echo "Compiling Cygnus..."
 make clean
 make
