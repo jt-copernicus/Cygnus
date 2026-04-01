@@ -120,12 +120,16 @@ Sample, pre-filled session, menu, keys, and icons files are placed in ~/.cygnus-
 ### Quick Setup (Debian/Ubuntu)
 The `install.sh` script installs dependencies, builds the project, installs it system-wide, and sets up the initial configuration:
 ```bash
+git clone https://github.com/jt-copernicus/Cygnus
+cd Cygnus
 chmod +x install.sh
 sudo ./install.sh
 ```
 
 ### Manual Build and Install
 ```bash
+git clone https://github.com/jt-copernicus/Cygnus
+cd Cygnus
 mkdir -p cygnus-paint
 mv main.cpp cygnus-paint/
 mv cygnus-paint.1 cygnus-paint/
