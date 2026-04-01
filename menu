@@ -1,0 +1,13 @@
+  [exec] (Terminal) {x-terminal-emulator}
+  [exec] (Run Command) {run}
+  [exec] (File Manager) {cygnus-fm}
+  [exec] (Text Editor) {cygnus-edit}
+  [exec] (Calculator) {cygnus-calc}
+  [exec] (Web Browser) {sensible-browser}
+  [exec] (Screen Capture) {cygnus-shot -a}
+  [exec] (Image Viewer) {cygnus-view}
+  [exec] (Webcam App) {cygnus-cam}
+  [exec] (Paint App) {cygnus-paint} 
+  [exec] (Media Player) {cygnus-media}
+  [exit]
+  [restart]

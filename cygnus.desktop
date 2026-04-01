@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Cygnus
+Comment=Minimalistic floating window manager for X11
+Exec=cygnus
+Type=Application
+DesktopNames=Cygnus

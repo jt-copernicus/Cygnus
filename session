@@ -1,0 +1,27 @@
+#!/bin/bash
+# Cygnus WM Session Script
+# This script is executed by Cygnus WM on startup.
+
+#if you have a touchpad (like a laptop or chromebook)
+#and the touchpad settings aren't imported from another wm/dm
+#then you'll need to run 'xinput --list' to find the name of your touchpad
+#then uncomment the line below, replacing the name of your touchpad.
+#xinput set-prop "your touchpad name goes here" "libinput Tapping Enabled" 1 &
+
+#adding a black background because some display managers will not go away unless something 'draws' over the root window.
+#you can delete or comment out the next line if you set up a wallpaper below, with feh or nitrogen.
+xsetroot -solid "#000000" &
+
+#start panel applets (example).  
+#cbatticon &
+#volumeicon &
+#nm-applet &
+
+# Start Cygnus Automounter
+cygnus-mount &
+
+# Start Cygnus Clock
+cygnus-clock &
+
+# Set background (example)
+# feh --bg-scale ~/Pictures/wallpaper.jpg &

@@ -1,0 +1,37 @@
+.TH CYGNUS-MEDIA 0.3 "March 2026" "Version 0.3" "Cygnus Media Player"
+.SH NAME
+cygnus-media \- lightweight media player for Cygnus WM
+
+.SH SYNOPSIS
+.B cygnus-media
+[\fIFILE\fR]
+
+.SH DESCRIPTION
+.B cygnus-media
+is a simple media player built using SDL2 and FFmpeg for the Cygnus Window Manager. It handles both audio and video playback. If no file is provided, it launches a file picker (\fBcygnus-open\fR).
+
+.SH KEY BINDINGS
+.TP
+.B Space
+Pause/Resume playback.
+.TP
+.B Left Arrow
+Rewind 10 seconds.
+.TP
+.B Right Arrow
+Fast forward 10 seconds.
+.TP
+.B Up Arrow
+Volume Up.
+.TP
+.B Down Arrow
+Volume Down.
+.TP
+.B q, Escape
+Exit the player.
+
+.SH AUTHOR
+Jonathan Torres
+
+.SH LICENSE
+Licensed under GPL v3.0-or-later

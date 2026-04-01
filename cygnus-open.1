@@ -1,0 +1,39 @@
+.TH CYGNUS-OPEN 1.0 "March 2026" "Version 1.0" "Cygnus File Picker"
+.SH NAME
+cygnus-open \- minimalist file picker for Cygnus WM utilities
+
+.SH SYNOPSIS
+.B cygnus-open
+[\fB\-view\fR] [\fB\-media\fR]
+
+.SH DESCRIPTION
+.B cygnus-open
+is a minimalist file picker used by other Cygnus utilities like \fBcygnus-view\fR and \fBcygnus-media\fR to browse and select files. It follows the Cygnus aesthetic with thin borders and a scrollable file list.
+
+.SH OPTIONS
+.TP
+.B \-view
+Filter for image files compatible with \fBcygnus-view\fR.
+.TP
+.B \-media
+Filter for audio and video files compatible with \fBcygnus-media\fR.
+
+.SH KEY BINDINGS
+.TP
+.B Up/Down Arrows
+Navigate the file list.
+.TP
+.B Return, o
+Open the selected file or directory.
+.TP
+.B Backspace
+Go to the parent directory.
+.TP
+.B Escape, c
+Cancel the operation and exit.
+
+.SH AUTHOR
+Jonathan Torres
+
+.SH LICENSE
+Licensed under GPL v3.0-or-later

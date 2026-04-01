@@ -1,0 +1,154 @@
+.TH CYGNUS 1.6-2 "March 2026" "Version 1.6-2" "Cygnus Window Manager"
+.SH NAME
+cygnus \- a minimalistic floating window manager for X11
+
+.SH SYNOPSIS
+.B cygnus
+
+.SH DESCRIPTION
+.B cygnus
+is a thin, minimalistic window manager for X11 written in C. It provides basic floating window management with a focus on simplicity and keyboard-driven interaction. Windows are managed via MapRequest and ConfigureRequest events and feature thin borders without title bars or buttons.
+
+Cygnus features a built-in panel that is always visible and cannot be covered by windows. It also includes a built-in application runner and a configurable root menu.
+
+.SH KEY BINDINGS
+Cygnus uses Alt (Mod1) as the default modifier for window management and Ctrl/Shift/Super for system actions.
+
+.TP
+.B Alt+q
+Close the focused window.
+.TP
+.B Alt+F4
+Close the focused window.
+.TP
+.B Alt+x
+Maximize the focused window (toggles).
+.TP
+.B Alt+n
+Minimize the focused window (iconify).
+.TP
+.B Alt+r
+Restore the focused window from maximized state.
+.TP
+.B Alt+Tab
+Cycle through managed windows and bring them to the front.
+.TP
+.B F11
+Toggle fullscreen for the focused window.
+.TP
+.B F5
+Refresh borders and update window colors.
+.TP
+.B Ctrl+Shift+q
+Exit the window manager.
+.TP
+.B Ctrl+d
+Launch the built-in application runner.
+.TP
+.B Alt+Return
+Launch x-terminal-emulator (default).
+.TP
+.B Alt+f
+Launch the built-in file manager (cygnus-fm).
+
+.SH MOUSE INTERACTIONS
+.TP
+.B Right Click (Desktop)
+Open the root menu.
+.TP
+.B Alt + Left Click Drag
+Move the window currently under the cursor.
+.TP
+.B Ctrl + Left Click Drag
+Resize the window currently under the cursor from the nearest corner.
+
+.SH CONFIGURATION
+Cygnus looks for configuration files in the user's home directory.
+
+.TP
+.B ~/.cygnus-wm/session
+A shell script executed on startup. Use this to set the wallpaper, start a panel (e.g., stalonetray), or launch background daemons. Must be executable.
+.TP
+.B ~/.cygnus-wm/keys
+A plain text file for defining additional key bindings.
+Format: [MODIFIER] [KEYSYM] [COMMAND]
+Supported modifiers: Control, Ctrl, Alt, Mod1, Shift, Super, Mod4.
+Internal commands: run (triggers the built-in runner).
+Example:
+  Super Super_L run
+  Alt Return x-terminal-emulator
+  Control space x-terminal-emulator
+
+.TP
+.B ~/.cygnus-wm/menu
+A plain text file for defining the root menu.
+Format:
+  [exec] (Label) {command}
+  [exit]
+  [restart]
+Internal commands: {run} (triggers the built-in runner).
+Example:
+  [exec] (Terminal) {x-terminal-emulator}
+  [exec] (Run) {run}
+  [restart]
+  [exit]
+
+.TP
+.B ~/.cygnus-wm/icons
+A plain text file for configuring the file manager icon theme.
+Format: icontheme=NAME
+Example:
+  icontheme=ubuntu-mono-dark
+
+.SH FILES
+.TP
+.I /usr/local/bin/cygnus
+The window manager executable.
+.TP
+.I /usr/local/bin/cygnus-fm
+The file manager utility.
+.TP
+.I /usr/local/bin/cygnus-media
+The media player utility.
+.TP
+.I /usr/local/bin/cygnus-view
+The image viewer utility.
+.TP
+.I /usr/local/bin/cygnus-edit
+The text editor utility.
+.TP
+.I /usr/local/bin/cygnus-calc
+The calculator utility.
+.TP
+.I /usr/local/bin/cygnus-open
+The file picker utility.
+.TP
+.I ~/.cygnus-wm/session
+User session script.
+.TP
+.I ~/.cygnus-wm/keys
+User key binding configuration.
+.TP
+.I ~/.cygnus-wm/menu
+User root menu configuration.
+.TP
+.I ~/.cygnus-wm/icons
+User icon theme configuration.
+
+.SH AUTHOR
+Jonathan Torres
+
+.SH LICENSE
+Licensed under GPL v3.0-or-later
+
+.SH SEE ALSO
+.BR cygnus-fm (1),
+.BR cygnus-media (1),
+.BR cygnus-view (1),
+.BR cygnus-edit (1),
+.BR cygnus-calc (1),
+.BR cygnus-open (1),
+.BR cygnus-shot (1),
+.BR cygnus-paint (1),
+.BR cygnus-cam (1),
+.BR X (7)

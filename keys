@@ -1,0 +1,10 @@
+#below are some examples to get keyboard shortcuts working
+#Control m vlc
+#Control f firefox
+#Control p pcmanfm
+#Alt d dmenu_run
+
+#if you're on a chromebook, and the keyboard layout is correctly selected, the chromebook search button is mapped as Super_L
+#for example
+#None Super_L run #to run the app launcher, or:
+#None Super_L firefox www.google.com #to use the 'search' button as a shortcut to a search engine, or whatever else
