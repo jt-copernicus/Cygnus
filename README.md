@@ -126,9 +126,14 @@ sudo ./install.sh
 
 ### Manual Build and Install
 ```bash
+mkdir -p cygnus-paint
+mv main.cpp cygnus-paint/
+mv cygnus-paint.1 cygnus-paint/
+mv pmakefile cygnus-paint/Makefile
 make
 sudo make install
 ```
+*The makefile expects cygnus-paint in its own directory.  I keep it separate because it's the only program written in C++ instead of C.
 
 ## Usage
 Run `man cygnus` for full documentation. Each utility also has its own man page (e.g., `man cygnus-fm`).
