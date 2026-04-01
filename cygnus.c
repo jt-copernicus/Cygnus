@@ -1,6 +1,6 @@
 /*
  * Cygnus Window Manager
- * A minimalistic window manager for X11 written in C.
+ * A minimalistic window manager for X11.
  *
  * by Jonathan Torres
  * 
